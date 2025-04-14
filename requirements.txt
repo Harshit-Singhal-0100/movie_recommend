@@ -43,7 +43,6 @@ Pygments==2.19.1
 python-dateutil==2.9.0.post0
 python-dotenv==1.1.0
 pytz==2025.2
-pywin32==310
 pyzmq==26.4.0
 referencing==0.36.2
 requests==2.32.3
@@ -62,7 +61,5 @@ urllib3==2.4.0
 watchdog==6.0.0
 wcwidth==0.2.13
 
-dotenv
-os
-
-
+# Add pywin32 for Windows only
+pywin32==310; sys_platform == "win32"
